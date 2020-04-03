@@ -1,11 +1,32 @@
 function tickets(array) {
-  if(JSON.stringify(array) == JSON.stringify([25, 25, 50, 50])){
-    return 'YES';
-  } else {
-  return 'NO'
+  let [q, h, d] = [0, 0 ,0];
+  let answer = 'YES'
+  for(i = 0; i < array.length; i++){
+    if(array[i] === 25){
+      q++
+    }
+    else if(array[i] === 50){
+      h++
+      q--
+     }
+     if(array[i] === 100){
+       if(h > 0){
+         h--
+         q--
+       }
+       else {
+         q = q - 3 
+       }
+  }
+  if(q < 0){
+    answer = 'NO'
+  }
 };
+return answer
 };
 
+ console.log(tickets([25, 25]))
+ console.log(tickets([25, 100]))
 // The new "Avengers" movie has just been released! There are a lot of people at the cinema box office standing in a huge line. Each of them has a single 100, 50 or 25 dollar bill. An "Avengers" ticket costs 25 dollars.
 
 // Vasya is currently working as a clerk. He wants to sell a ticket to every single person in this line.
