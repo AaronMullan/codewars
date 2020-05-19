@@ -1,0 +1,98 @@
+body {
+  background-color: gray;
+  justify-items: center;
+}
+form {
+  background-color: gray;
+  height: 300px;
+}
+form h2 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+input[type=submit] {
+  padding:5px 15px; 
+  background:black;
+  color: white;
+  width: 600px;
+  border: none;
+ 
+}
+.container {
+  margin: auto;
+  background-color: white;
+  width: 900px;
+  height: 600px;
+  display: inline-block;
+  margin: 5%;
+}
+.menu {
+  display: inline-block;
+  height: 40px;
+  justify-items: space-between;
+  width: 900px;
+  padding-top: 10px;
+}
+.menu ul {
+  display: inline-block;
+  color: white;
+}
+.menu li {
+  background-color: gray;
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+.menu p {
+  display: inline;
+  font-weight: bold;
+ 
+  padding: 25px;
+}
+.content {
+  display:block;
+  width:700px;
+  height: 300px;
+  float: right;
+  margin-right: 2vw;
+  margin-top: 10px;
+  line-height: 2em;
+  text-align: top;
+}
+.content span {
+  display: block;
+}
+.content input {
+  margin-left: 50px;
+}
+textarea {
+  margin-left: 68px;
+  height: 150px;
+  width: 200px;
+}
+.content h1 {
+  font-style: italic;
+  font-size: 2em;
+}
+.nav {
+  background-color: yellow;
+  padding: 2vw;
+  margin: 1vw;
+  border: 1px solid grey;
+  width: 100px;
+  height: 400px;
+  float: left;
+}
+.nav ul {
+  list-style-type: square;
+}
+.footer {
+  background-color: black;
+  color: white;
+  height: 30px;
+  margin-top: 2vh;
+  text-align: center;
+  padding-top: .5em;
+}
