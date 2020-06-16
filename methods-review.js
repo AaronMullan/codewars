@@ -2,7 +2,7 @@ const data = [1, 2, 3, 4]
 
 data.forEach(element => console.log(element));
 
-const mappeddata = data.map(element => element*2)
+const mappeddata = data.map(element => element*2);
 
 console.log(mappeddata);
 
